@@ -53,3 +53,13 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
+const playGame = () => {
+  const userChoice = getUserChoice("paper");
+  const computerChoice = getComputerChoice();
+  console.log(`You threw:  ${userChoice}`);
+  console.log(`The computer threw: ${computerChoice}`);
+
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();
