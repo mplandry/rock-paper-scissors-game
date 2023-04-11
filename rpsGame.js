@@ -53,4 +53,3 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
-console.log(determineWinner("paper", "rock"));
