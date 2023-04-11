@@ -31,29 +31,29 @@ const determineWinner = (getUserChoice, getComputerChoice) => {
     return "You have a tie";
   }
 };
-if (getUserChoice === "rock") {
-  if (getComputerChoice === "paper") {
+if (userChoice === "rock") {
+  if (computerChoice === "paper") {
     return "Computer has won,  Paper covers rock";
   } else {
     return "Congratulation, you won!!!";
   }
 }
-if (getUserChoice === "paper") {
-  if (getComputerChoice === "rock") {
+if (userChoice === "paper") {
+  if (computerChoice === "rock") {
     return "Congratulation, you won!! Paper covers rock ";
   } else {
     return "Sorry you lost!!";
   }
 }
 
-if (getUserChoice === "scissors") {
-  if (getComputerChoice === "paper") {
+if (userChoice === "scissors") {
+  if (computerChoice === "paper") {
     return "You won!! Scissor cuts paper!!";
   } else {
     return "Sorry you lost!!";
   }
-  if (getUserChoice === "rock") {
-    if (getComputerChoice === "scissors") {
+  if (userChoice === "rock") {
+    if (computerChoice === "scissors") {
       return "Sorry you lost!! rock crushes scissors";
     } else {
       return "Congratulations you won!!! You pretty good!";
