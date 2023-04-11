@@ -60,11 +60,6 @@ if (getUserChoice === "scissors") {
     }
   }
 }
-/*
-console.log(determineWinner('rock', 'paper'));
-console.log(determineWinner('rock', 'rock'));
-console.log(determineWinner('scissors', 'paper'));
-console.log(determineWinner('paper', 'scissors'));
-console.log(determineWinner('paper','rock'));
-console.log(determineWinner('',''));*/
-console.log(determineWinner("paper", "scissors"));
+
+console.log(determineWinner("", ""));
+Test github
