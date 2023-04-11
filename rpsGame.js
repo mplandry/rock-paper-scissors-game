@@ -62,4 +62,3 @@ if (getUserChoice === "scissors") {
 }
 
 console.log(determineWinner("", ""));
-Test github
