@@ -25,40 +25,39 @@ const getComputerChoice = () => {
       return "rock";
   }
 };
+
 // created a winner of game. Compare user choice with computer choice
-const determineWinner = (getUserChoice, getComputerChoice) => {
+const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return "You have a tie";
   }
-};
-if (getUserChoice === "rock") {
-  if (getComputerChoice === "paper") {
-    return "Computer has won,  Paper covers rock";
-  } else {
-    return "Congratulation, you won!!!";
+  if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+      return "Computer has won,  Paper covers rock";
+    } else {
+      return "Congratulation, you won!!!";
+    }
   }
-}
-if (getUserChoice === "paper") {
-  if (getComputerChoice === "rock") {
-    return "Congratulation, you won!! Paper covers rock ";
-  } else {
-    return "Sorry you lost!!";
+  if (userChoice === "paper") {
+    if (computerChoice === "rock") {
+      return "Congratulations, you won!! Paper covers rock";
+    } else {
+      return "Sorry lost this time!";
+    }
   }
-}
-
-if (getUserChoice === "scissors") {
-  if (getComputerChoice === "paper") {
-    return "You won!! Scissor cuts paper!!";
-  } else {
-    return "Sorry you lost!!";
+  if (userChoice === "scissors") {
+    if (computerChoice === "paper") {
+      return "You won!! Scissor cuts paper!!";
+    } else {
+      return "Sorry you lost!!";
+    }
   }
-  if (getUserChoice === "rock") {
-    if (getComputerChoice === "scissors") {
+  if (userChoice === "rock") {
+    if (computerChoice === "scissors") {
       return "Sorry you lost!! rock crushes scissors";
     } else {
       return "Congratulations you won!!! You pretty good!";
     }
   }
-}
-
-console.log(determineWinner("", ""));
+};
+console.log(determineWinner("rock", "scissors"));
